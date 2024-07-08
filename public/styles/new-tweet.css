@@ -8,11 +8,11 @@
 form{
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 form div{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 button { 
@@ -26,4 +26,14 @@ button {
 }
 button:hover {
   background-color: #1a91da;
+}
+#tweet-text {
+  outline: 0; 
+  border-width: 0 0 2px; 
+  background-color: inherit;
+  bottom: 0;
+  resize: none;
+}
+.counter {
+  font-weight: bold;
 }
