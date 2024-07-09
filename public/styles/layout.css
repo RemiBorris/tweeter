@@ -30,5 +30,5 @@ body {
  width: 90%;
  background-color: inherit;
  flex-direction: column;
- margin: 0 auto;
+ margin: 0 auto 50px auto;
  }

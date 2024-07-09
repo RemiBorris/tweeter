@@ -1,7 +1,8 @@
+/*global $ document*/
 $(document).ready(function() {
 
   // Set up the event listener for the textarea
-  $('.new-tweet textarea').on('input', function(event) {
+  $('.new-tweet textarea').on('input', function() {
     let textLength = $(this).val().length;
     let remainingChars = 140 - textLength;
 
