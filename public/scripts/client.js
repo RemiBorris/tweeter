@@ -51,11 +51,11 @@ $(document).ready(function() {
     event.preventDefault();
     const formData = $("#new-tweet-form").serialize();
     
-    if (formData.slice(5) === "") {
+    if ($('#tweet-text').val() === "") {
       return alert('Cannot submit empty tweet, tell us: What are you humming about?');
     };
 
-    if (formData.slice(5).length > 140) {
+    if ($('#tweet-text').val().length > 140) {
       return alert('Cannot submit tweet above 140 characters try shortening and submit again!');
     }
 
@@ -63,13 +63,13 @@ $(document).ready(function() {
       method: 'POST',
       url: '/tweets',
       data: formData,
+      success: () => {
+        loadTweets();
+        $('#new-tweet-form')[0].reset();
+      }
     });
   
-    
-    loadTweets();
   });
-
-
 
   loadTweets();
 
