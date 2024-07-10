@@ -21,6 +21,7 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
     
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -50,7 +51,7 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets" >
+        <form id="new-tweet-form" method="POST" action="/tweets" >
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
@@ -61,25 +62,6 @@
       </section>
         <!-- This article contains individual tweets -->
          <section id="tweets-container">
-          <article class="tweet-article"> 
-            <header>
-              <div class="tweet-user">
-                <i class="fa-solid fa-face-angry"></i>
-                <h3>Username</h3>
-              </div>
-              <h4>@handle</h4>
-            </header>
-            <p>This is my Tweet</p>
-            <hr>
-            <footer>
-              <h5>10 days ago</h5>
-              <div id="icons">
-                <i class="fa-solid fa-flag"></i>
-                <i class="fa-solid fa-retweet"></i>
-                <i class="fa-solid fa-heart"></i>
-              </div>
-            </footer>
-          </article>
         </section>
     </main>
   </body>
