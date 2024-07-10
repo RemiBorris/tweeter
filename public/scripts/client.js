@@ -39,18 +39,6 @@ $(document).ready(function() {
     }
   };
 
-  $("#new-tweet-form").on("submit", function(event) {
-    event.preventDefault();
-    const formData = $("#new-tweet-form").serialize();
-
-    $.ajax({
-      method: 'POST',
-      url: '/tweets',
-      data: formData,
-    });
-  });
-
-
   const loadTweets = function() {
     $.ajax({
       method: 'GET',
@@ -58,6 +46,30 @@ $(document).ready(function() {
       success: data => renderTweets(data)
     });
   };
+
+  $("#new-tweet-form").on("submit", function(event) {
+    event.preventDefault();
+    const formData = $("#new-tweet-form").serialize();
+    
+    if (formData.slice(5) === "") {
+      return alert('Cannot submit empty tweet, tell us: What are you humming about?');
+    };
+
+    if (formData.slice(5).length > 140) {
+      return alert('Cannot submit tweet above 140 characters try shortening and submit again!');
+    }
+
+    $.ajax({
+      method: 'POST',
+      url: '/tweets',
+      data: formData,
+    });
+  
+    
+    loadTweets();
+  });
+
+
 
   loadTweets();
 
