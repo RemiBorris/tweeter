@@ -39,3 +39,9 @@ button:hover {
 .counter {
   font-weight: bold;
 }
+
+.new-tweet #error-message {
+  color: red;
+  border: 3px red solid;
+  padding: 20px;
+}
