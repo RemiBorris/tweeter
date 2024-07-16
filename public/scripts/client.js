@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-/*global $ document*/
+/*global $ document timeago*/
 $(document).ready(function() {
 
   const createTweetFooter = function(timestamp) {
@@ -80,7 +80,7 @@ $(document).ready(function() {
       $('#error-message').text('⚠ Too short. Plz rspct our mandatory minimum of 1 char. #kthxbye. ⚠');
       $('#error-message').show(400);
       return;
-    };
+    }
 
     if ($('#tweet-text').val().length > 140) {
       $('#error-message').text('⚠ Too long. Plz rspct our arbitrary limit of 140 chars. #kthxbye. ⚠');

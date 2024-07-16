@@ -32,3 +32,33 @@ body {
  flex-direction: column;
  margin: 0 auto 50px auto;
  }
+
+ @media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+  #new-tweet-header {
+    height: 30rem;
+    width: 30%;
+    padding: 0 10%;
+    margin: 6rem 10%
+  }
+ }
+
+ @media screen and (max-width: 1023px) {
+  nav{
+    position: absolute;
+    float: inherit;
+    background-color: transparent;
+  }
+  body {
+    padding-top: 0;
+  }
+  main.container {
+    min-width: 30rem;
+  }
+  nav, header {
+    min-width: 35rem;
+  }
+ }
