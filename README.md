@@ -6,9 +6,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["View of new tweet"](https://github.com/RemiBorris)
-!["View of desktop layout"](https://github.com/RemiBorris/tinyapp)
-!["View of mobile layout"](https://github.com/RemiBorris/tinyapp/)
+!["View of new tweet"](https://github.com/RemiBorris/tweeter/blob/master/docs/Tweeter%20-%20Home%20Page%20-%20Tweet%20Creation.png?raw=true)
+!["View of desktop layout"](https://github.com/RemiBorris/tweeter/blob/master/docs/Tweeter%20-%20Home%20Page%20-%20Desktop%20Layout.png?raw=true)
+!["View of mobile layout"](https://github.com/RemiBorris/tweeter/blob/master/docs/Tweeter%20-%20Home%20Page%20-%20Mobile%20Layout.png?raw=true)
 
 ## Getting Started
 
